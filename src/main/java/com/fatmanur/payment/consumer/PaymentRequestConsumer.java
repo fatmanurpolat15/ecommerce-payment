@@ -33,7 +33,7 @@ public class PaymentRequestConsumer {
 
             PaymentResult result = new PaymentResult(
                     request.orderId(),
-                    success ? "SUCCESS" : "FAILED",
+                    success ? "SUCCEEDED" : "FAILED",
                     reference,
                     success ? null : "Insufficient funds",
                     request.amount(),
